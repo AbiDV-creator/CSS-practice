@@ -1,31 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-/* Typography is the way that text is arranged and presented. */
 body{
+    padding: 10%;
     font-size: 1.5rem;
-    padding: 2em;
 }
-/* label,
-input,
-button{
-    font-size: inherit;
-} */
- p{
-    /* text-decoration: underline;
-    text-decoration: overline;
-    text-decoration: line-through;
-    text-decoration: none; */
-    /* text-transform: capitalize; */
-    /* text-transform: lowercase;*/
-    /* text-transform: uppercase; */
-    text-align: justify;
-    text-indent: 2em;
-    line-height: 1.4;
-    /* letter-spacing: 0.2em; */
-    /* word-spacing: 2em; */
-    font-weight: 400;
-    /* font-weight: bold; */
-    /* font-style: oblique; */
-    /* font-style: italic; */
-    /* font-family: 'Courier New', Courier, monospace; */
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(165, 42, 42);
+}
+a:link{
+    color: red;
+}
+a:visited {
+    color: blueviolet;
+}
+a:hover, a:focus{
+    color: yellow;
+    opacity: 0.5;
+    background-color: aqua;
+    /* color: rgba(165, 42, 42, 0.5); */
 
- } 
+}
+a:active{
+    color: green;
+}
