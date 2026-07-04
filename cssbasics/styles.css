@@ -1,32 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-size: 1.5rem;
+    min-height: 200vh;
 }
-.column{
-    /* column-count: 4;
-    column-width: 200px; */
-    columns: 4 250px;
-    column-rule: 3px solid #333;
-    column-gap: 3rem;
+.outer-container{
+    border: 2px dashed black;
+    width: 75vw;
+    height: 105vh;
+    margin: 40px auto;
+    position: relative;
 }
-.column p{
-    margin-top: 0;
-    /* margin-bottom: 0; */
+.inner-container{
+    border: 2px solid blue;
+    width: 40vw;
+    height: 60vh;
+    margin: 200px auto;
+    /* position: relative; */
 }
-.column h2{
-    margin: 0;
-    background-color: #333;
-    color: antiquewhite;
-    padding: 3rem;
-    break-inside: avoid;
-    /* break-before: column; */
+.box{
+    width: 150px;
+    height: 150px;
+    /* border: 2px solid red; */
+    color: white;
+    padding: 1rem;
 }
-.column .quote{
-    margin-top: 2rem;
-    color: blue;
-    text-align: center;
-    font-size: 3rem;
-    column-span: all;
+.absolute{
+    background-color: blue;
+    position: absolute;
+    /* top: 48px;
+    left: 48px; */
+    top: 0px;
+    left: 0px;
+    /* z-index: 1; */
 }
-.nowrap{
-    white-space: nowrap;
+.relative{
+    background-color: brown;
+    position: relative;
+    top: 48px;
+    left: 48px;
+    /* display: none; */
+}
+.fixed{
+    background-color: orangered;
+    position: fixed;
+    top: 100px;
+    left: 200px;
+}
+.sticky{
+    background-color: black;
+    position: sticky;
+    top: 100px;
 }
