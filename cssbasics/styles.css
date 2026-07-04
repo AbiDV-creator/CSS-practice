@@ -3,55 +3,60 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-size: 1.5rem;
-    min-height: 200vh;
 }
-.outer-container{
-    border: 2px dashed black;
-    width: 75vw;
-    height: 105vh;
-    margin: 40px auto;
-    position: relative;
+section{
+    height: 100vh;
 }
-.inner-container{
-    border: 2px solid blue;
-    width: 40vw;
-    height: 60vh;
-    margin: 200px auto;
-    /* position: relative; */
-}
-.box{
-    width: 150px;
-    height: 150px;
-    /* border: 2px solid red; */
-    color: white;
-    padding: 1rem;
-}
-.absolute{
+.blue{
     background-color: blue;
-    position: absolute;
-    /* top: 48px;
-    left: 48px; */
-    top: 0px;
-    left: 0px;
-    /* z-index: 1; */
 }
-.relative{
-    background-color: brown;
-    position: relative;
-    top: 48px;
-    left: 48px;
-    /* display: none; */
+.red{
+    background-color: red;
 }
-.fixed{
-    background-color: orangered;
-    position: fixed;
-    top: 100px;
-    left: 200px;
+.green{
+    background-color: green;
 }
-.sticky{
-    background-color: black;
+header, footer{
+    color: whitesmoke;
+    text-align: center;
+    height: 80px;
+    /* padding: 1rem; */
+}
+header{
     position: sticky;
-    top: 100px;
+    top: 0;
+    font-size: 4rem;
 }
+footer{
+    position: sticky;
+    bottom: 0px;
+    font-size: 2rem;
+    background-color: black;
+}
+a{
+    color: white;
+}
+.abi{
+    background-color: aquamarine;
+    font-size: inherit;
+    color: brown;
+    position: fixed;
+    top: 35%;
+    left: 0;
+    z-index: 1;
+}
+.abi1{
+    background-color: aquamarine;
+    font-size: inherit;
+    color: brown;
+    position: fixed;
+    top: 45%;
+    left: 0;
+    z-index: 1;
+}
+
